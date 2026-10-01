@@ -1,0 +1,19 @@
+# The six reference slides and the cover in reference/, transcribed. A gate compares the BIND copy against this text.
+BIND
+CONNECT THE MARKET
+Bring multiple issuers together around a shared reference price. BIND connects market activity into one transparent, efficient experience.
+Robinhood Chain | bind.onl
+ONE SHARE. MANY ISSUERS.
+Access different issuer tokens against a common reference. Compare markets, follow pricing, and discover opportunities from one unified interface.
+TRADE THE REFERENCE
+Track issuer prices against a shared market reference. BIND makes market relationships easier to read, compare, and access on-chain.
+KEEP THE WALLET UNLINKED
+Interact with the market without unnecessarily exposing your wallet identity. BIND is designed around privacy-first on-chain interactions.
+SHOW THE PROOF
+Follow market references, issuer pricing, and transaction activity with verifiable on-chain data. See the market and verify the signal.
+BIND. TRACK. DISCOVER.
+A unified market experience for tokenized shares, issuer pricing, and on-chain liquidity. Explore multiple markets through a single reference layer.
+BIND
+Connect the Market.
+Break the Link.
+Show the Proof.

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BIND | Every price of a stock token, on one line.</title>
+<meta name="description" content="Stock tokens on Robinhood Chain trade in several pools. BIND lines the pools up, shows each gap in basis points and stamps every figure with its source and age.">
+<link rel="canonical" href="https://bind.onl/">
+<meta name="theme-color" content="{{ground}}">
+<meta name="application-name" content="BIND">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIND">
+<meta property="og:title" content="BIND | Every price of a stock token, on one line.">
+<meta property="og:description" content="Pools of the same stock token, lined up with each gap in basis points and every figure stamped with its source and age.">
+<meta property="og:url" content="https://bind.onl/">
+<meta property="og:image" content="https://bind.onl/img/og.jpg">
+<meta property="og:image:width" content="1500">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="The BIND mark, three rounded triangles, on a deep navy ground.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BIND | Every price of a stock token, on one line.">
+<meta name="twitter:image" content="https://bind.onl/img/og.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/img/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/tokens.css">
+<link rel="stylesheet" href="/site.css">
+<script src="/register.js"></script>
+<script src="/lib.js"></script>
+<script src="/site.js" defer></script>
+<script src="/live.js" defer></script>
+<script src="/proof.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Jump to the main part</a>
+<header class="bar" data-bar>
+  <div class="wrap">
+    <!--slot:ca-->
+    <div class="bar__pill">
+      <a class="lockup" href="/" aria-label="BIND home"><img src="/img/mark-96.png" srcset="/img/mark-96.png 1x, /img/mark-192.png 2x" width="30" height="26" alt=""><span class="lockup__word">BIND</span></a>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="#lane">Lane</a>
+        <a href="#pools">Pools</a>
+        <a href="#method">Method</a>
+        <a href="#wallet">Wallet</a>
+        <a href="#receipt">Receipt</a>
+        <a href="#token">Token</a>
+      </nav>
+      <span class="live" role="status" data-bookstate data-state="unread"><span class="live__dot" aria-hidden="true"></span><span class="live__text" data-text>Reading</span></span>
+      <div class="socials" data-socials><!--slot:socials--></div>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="site-nav" data-menu><span class="menu__lines" aria-hidden="true"></span><span class="sr">Menu</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+
+<section class="hero" id="lane" aria-labelledby="hero-h">
+  <div class="hero__copy">
+    <h1 id="hero-h" class="display">See every price of a stock token on one line.</h1>
+    <p class="hero__sub">Robinhood Chain lists stock tokens that trade in several pools at once, and those pools rarely quote one number. BIND sets them side by side, measures each gap and lets you check the chain yourself.</p>
+    <div class="hero__cta">
+      <a class="btn btn--ink" href="#pools">Open the pools <span class="btn__icon" aria-hidden="true">&rarr;</span></a>
+      <a class="link-arrow" href="#method">How the line is drawn</a>
+    </div>
+    <div class="hero__stats statbook">
+      <p class="statbook__head">The chain, read live <span class="state" data-state="unread" data-bookstate="chip"><span data-text><span class="if-js">reading</span><span class="if-no-js">unread</span></span></span><span class="src" data-bookage>3 sources</span></p>
+      <div class="statbook__merge" data-bookmerge aria-hidden="true"></div>
+      <div class="stat" data-stat="block">
+        <p class="stat__label">Newest block</p>
+        <p class="stat__value num" data-value><span class="state" data-state="unread"><span class="if-js">reading</span><span class="if-no-js">unread</span></span></p>
+        <p class="stat__foot" data-note>node</p>
+      </div>
+      <div class="stat" data-stat="gas">
+        <p class="stat__label">Gas price</p>
+        <p class="stat__value num" data-value><span class="state" data-state="unread"><span class="if-js">reading</span><span class="if-no-js">unread</span></span></p>
+        <p class="stat__foot" data-note>node</p>
+      </div>
+      <div class="stat" data-stat="tvl">
+        <p class="stat__label">Value locked</p>
+        <p class="stat__value num" data-value><span class="state" data-state="unread"><span class="if-js">reading</span><span class="if-no-js">unread</span></span></p>
+        <p class="stat__foot" data-note>DefiLlama</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero__object">
+    <div class="sealstrip">
+      <img class="hero__mark" src="/img/mark-192.png" srcset="/img/mark-192.png 1x, /img/mark-384.png 2x" width="96" height="82" alt="">
+      <p class="sealstrip__promise">Look at everything. Hand over nothing.</p>
+      <p class="sealstrip__wallet"><span>Your keys</span><i aria-hidden="true"></i><span>never asked</span></p>
+    </div>
+    <div class="hero__book" data-hero aria-busy="true">
+      <div class="bk-shell"><div class="bk-core">
+        <p class="bk-idle"><span class="state" data-state="unread"><span class="if-js">reading</span><span class="if-no-js">unread</span></span> Pool lane</p>
+        <ul class="hp-idle" aria-hidden="true"><li></li><li></li><li></li><li></li></ul>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="zsec" id="chain" aria-labelledby="chain-h">
+  <div class="zsec__copy" data-reveal>
+    <h2 id="chain-h">The chain, asked directly.</h2>
+    <p class="lead">Every six seconds the page puts one batched question to the public node: chain id, newest block, its hash and the gas price. An answer from any chain other than 4663 is thrown away, so a wrong endpoint shows up as unread and never as a figure.</p>
+  </div>
+  <dl class="strip" data-reveal data-chain-strip>
+    <div class="strip__cell" data-k="chain"><dt>Chain id</dt><dd class="num">4663</dd><p class="strip__src">Fixed, and checked on every read</p></div>
+    <div class="strip__cell" data-k="block"><dt>Newest block</dt><dd class="num" data-v><span class="state" data-state="unread"><span class="if-js">reading</span><span class="if-no-js">unread</span></span></dd><p class="strip__src" data-n>node</p></div>
+    <div class="strip__cell" data-k="age"><dt>Block age</dt><dd class="num" data-v><span class="state" data-state="unread"><span class="if-js">reading</span><span class="if-no-js">unread</span></span></dd><p class="strip__src" data-n>Block time against this clock</p></div>
+    <div class="strip__cell" data-k="gas"><dt>Gas price</dt><dd class="num" data-v><span class="state" data-state="unread"><span class="if-js">reading</span><span class="if-no-js">unread</span></span></dd><p class="strip__src" data-n>node</p></div>
+    <div class="strip__cell strip__cell--wide" data-k="hash"><dt>Block hash</dt><dd class="num strip__hash" data-v><span class="state" data-state="unread"><span class="if-js">reading</span><span class="if-no-js">unread</span></span></dd><p class="strip__src" data-n>Any explorer or node reports this same hash for the block</p></div>
+  </dl>
+</section>
+
+<section class="pools" id="pools" aria-labelledby="pools-h">
+  <header class="section-head" data-reveal>
+    <h2 id="pools-h">Pool by pool</h2>
+    <p class="lead">Six stock tokens, read from DexScreener. A group holds one stock; every row in it is a pool that prices that stock. A gap is measured from the median of the pools that are read.</p>
+  </header>
+  <div class="bk bk-book" data-book data-reveal aria-busy="true">
+    <p class="bk-fail"><span class="state" data-state="unread"><span class="if-js">reading</span><span class="if-no-js">unread</span></span> The pools have not answered yet.</p>
+  </div>
+</section>
+
+<section class="merge" id="method" data-merge aria-labelledby="merge-h">
+  <header class="merge__head" data-reveal>
+    <h2 id="merge-h">How the line is drawn</h2>
+    <p class="lead">Four moves turn a pile of disagreeing quotes into a line you can read. Scroll, and the picture beside it follows.</p>
+  </header>
+  <div class="merge__body">
+    <div class="merge__pin">
+      <div class="mg" data-stage data-at="4" aria-hidden="true">
+        <p class="mg__label">Median</p>
+        <ul class="mg__rows">
+          <li class="mg__row"><span class="mg__name">USDG pool</span><span class="mg__track"><i class="mg__tick"></i></span></li>
+          <li class="mg__row"><span class="mg__name">WETH pool</span><span class="mg__track"><i class="mg__tick"></i></span></li>
+          <li class="mg__row"><span class="mg__name">Index pool</span><span class="mg__track"><i class="mg__tick"></i></span></li>
+        </ul>
+        <p class="mg__wallet"><span>Every figure</span><i class="mg__bar"></i><span>sourced</span></p>
+      </div>
+    </div>
+    <ol class="merge__steps">
+      <li class="merge__step" data-step="1"><h3>Same stock, several doors.</h3><p>A stock token can be swapped through more than one pool, and every pool carries a price of its own. Put them side by side and they never land in one spot.</p></li>
+      <li class="merge__step" data-step="2"><h3>Leave out the shallow ones.</h3><p>A pool holding under 10,000 USD of liquidity is dropped. A price taken from a puddle tells you about the puddle, not about the stock.</p></li>
+      <li class="merge__step" data-step="3"><h3>Find the middle, then measure from it.</h3><p>The median of the remaining pools becomes the centre line. Each pool is placed by how many basis points it sits above or below that centre.</p></li>
+      <li class="merge__step" data-step="4"><h3>Name the source and let the clock run.</h3><p>Every figure names the service it came from and carries an age that counts up by the second. Past its window a figure vanishes, and in its place you read the word unread.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="desk4" aria-labelledby="desk4-h">
+  <header class="section-head" data-reveal>
+    <h2 id="desk4-h">Four states, four shapes</h2>
+    <p class="lead">Colour helps, but the shape of the dot is what you read, so the meaning holds for anyone, on any screen.</p>
+  </header>
+  <ol class="bento">
+    <li class="bento__cell bento__cell--mist" data-reveal>
+      <h3>Live.</h3>
+      <p>A solid dot. The figure was read inside its window: half a minute for the node, three for DefiLlama, two for DexScreener.</p>
+      <p class="bento__flow"><span class="glyph glyph--live" aria-hidden="true"></span>inside the window</p>
+    </li>
+    <li class="bento__cell bento__cell--night" data-reveal>
+      <h3>Stale.</h3>
+      <p>A dot filled to its middle. The last answer is genuine but aging. It stays on screen, dimmed, with its age next to it.</p>
+      <p class="bento__flow"><span class="glyph glyph--stale" aria-hidden="true"></span>real, but aging</p>
+    </li>
+    <li class="bento__cell bento__cell--green" data-reveal>
+      <h3>Unread.</h3>
+      <p>A dot with nothing inside. No digit is drawn: not a placeholder, and not the last good value carried forward.</p>
+      <p class="bento__flow"><span class="glyph glyph--unread" aria-hidden="true"></span>no figure</p>
+    </li>
+    <li class="bento__cell bento__cell--indigo" data-reveal>
+      <h3>Partial.</h3>
+      <p>The bar chip counts how many of the three sources are current, so a view built on one answer never poses as a view built on three.</p>
+      <p class="bento__flow"><span class="glyph glyph--stale" aria-hidden="true"></span>n of 3 current</p>
+    </li>
+  </ol>
+</section>
+
+<section class="ledger" id="wallet" aria-labelledby="ledger-h">
+  <header class="section-head" data-reveal>
+    <h2 id="ledger-h">Nothing to plug in, nothing to sign</h2>
+    <p class="lead">BIND only reads public data. There is nothing to plug in and nothing to sign, and each row says what sits on which side.</p>
+  </header>
+  <div class="ledger__table" data-reveal>
+    <div class="ledger__cols" aria-hidden="true"><span>Public data read</span><span>Yours, untouched</span></div>
+    <div class="ledger__row">
+      <p class="ledger__open"><span class="ledger__k">Public data read</span>Chain id, newest block, its hash and the gas price, straight from the public node.</p>
+      <p class="ledger__sealed"><span class="ledger__k">Yours, untouched</span>Whatever wallet you hold. No wallet button, no signature request, no token approval.</p>
+    </div>
+    <div class="ledger__row">
+      <p class="ledger__open"><span class="ledger__k">Public data read</span>The value locked on the chain, from DefiLlama's list of chains.</p>
+      <p class="ledger__sealed"><span class="ledger__k">Yours, untouched</span>Your address, balances and history. The page neither asks for them nor keeps them.</p>
+    </div>
+    <div class="ledger__row">
+      <p class="ledger__open"><span class="ledger__k">Public data read</span>Price, liquidity and volume of six stock tokens' pools, from DexScreener.</p>
+      <p class="ledger__sealed"><span class="ledger__k">Yours, untouched</span>Cookies and accounts. There is no login, and nothing is written to your browser.</p>
+    </div>
+    <p class="ledger__foot">Your browser calls the three services directly, so each of them learns the network address you call from. BIND runs no server in between.</p>
+  </div>
+</section>
+
+<section class="receipt-sec" id="receipt" aria-labelledby="rc-h">
+  <div class="receipt-sec__copy" data-reveal>
+    <h2 id="rc-h">Take a receipt anyone can check.</h2>
+    <p class="lead">Choose what goes in and BIND writes a short note: the chain id, a block number and its hash, the time, and the widest pool gap on screen.</p>
+    <p>Anyone holding a node can look up that block and compare the hash. A seal is drawn from the note itself, so changing one character changes the seal.</p>
+  </div>
+  <div class="receipt-sec__tool" data-reveal data-proof>
+    <div class="rc card">
+      <div class="rc__top">
+        <div class="chips" role="group" aria-label="What to include">
+          <button class="chip" type="button" data-inc="block" aria-pressed="true">Block</button>
+          <button class="chip" type="button" data-inc="hash" aria-pressed="true">Hash</button>
+          <button class="chip" type="button" data-inc="gas" aria-pressed="false">Gas</button>
+          <button class="chip" type="button" data-inc="tvl" aria-pressed="false">Value locked</button>
+          <button class="chip" type="button" data-inc="lane" aria-pressed="true">Pool gap</button>
+        </div>
+      </div>
+      <div class="rc__body">
+        <div class="rc__seal" data-seal aria-label="Seal drawn from the note"><span class="state" data-state="unread"><span class="if-js">reading</span><span class="if-no-js">unread</span></span></div>
+        <pre class="rc__note" data-note tabindex="0" aria-label="Receipt note">Waiting for the node to answer.</pre>
+      </div>
+      <div class="rc__actions">
+        <button class="btn btn--ink" type="button" data-copy disabled>Copy the note</button>
+        <a class="btn btn--ghost" data-post role="link" aria-disabled="true">Post to X</a>
+        <span class="sr" role="status" aria-live="polite" data-proof-live></span>
+      </div>
+      <p class="rc__foot">The note holds no address, no balance and no signature. Nothing leaves your browser until you copy it or post it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tokenband" id="token" aria-labelledby="token-h">
+  <h2 id="token-h" class="tokenband__ticker" data-reveal>$BIND</h2>
+  <div class="tokenband__body" data-reveal>
+    <p>No contract address has been stated. The slot at the top of the page stays inert until the project publishes one, and nothing here hints at a date.</p>
+    <p class="tokenband__ca"><span class="pill">CA</span> <!--slot:ca-mirror--></p>
+    <!--slot:launch-->
+    <p class="tokenband__note">Copy an address only when the project's own account states it. Any other address is not this token.</p>
+  </div>
+</section>
+
+<section class="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h" data-reveal>Questions</h2>
+  <dl class="faq__list">
+    <div class="faq__item" data-reveal><dt>What does BIND do?</dt><dd>It reads Robinhood Chain from three public services and draws the pools of each stock token on one line, with each figure tied to the service that supplied it and to its age.</dd></div>
+    <div class="faq__item" data-reveal><dt>Where does the centre line come from?</dt><dd>From the pools themselves: it is the median price of the pools that hold at least 10,000 USD. No outside benchmark is read yet, so the page calls it the median and never a reference.</dd></div>
+    <div class="faq__item" data-reveal><dt>Why would a figure say unread?</dt><dd>The request failed, the node answered for some other chain, or the last good answer has outlived its window. A visible gap is more honest than an old number.</dd></div>
+    <div class="faq__item" data-reveal><dt>Can I trade here?</dt><dd>No. This site only reads. It has no wallet code, moves no funds and holds nothing of yours.</dd></div>
+    <div class="faq__item" data-reveal><dt>Is there a token?</dt><dd>No address is stated yet. When one is, it shows up whole in the bar at the top and copies with a click. Until then that slot does nothing.</dd></div>
+    <div class="faq__item" data-reveal><dt>Who may use the stock tokens?</dt><dd>Availability depends on where you live, plus the terms each issuer sets. Checking that is your job, and this page cannot do it for you.</dd></div>
+  </dl>
+</section>
+
+</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <a class="foot__home" href="/" aria-label="BIND home"><img src="/img/mark-96.png" srcset="/img/mark-96.png 1x, /img/mark-192.png 2x" width="56" height="48" alt="" loading="lazy" decoding="async"></a>
+        <div>
+          <p class="foot__line">Read the chain. Keep your keys. Check every figure.</p>
+          <p class="foot__wallet"><span>Your keys</span><i aria-hidden="true"></i><span>never asked</span></p>
+        </div>
+      </div>
+      <nav class="foot__nav" aria-label="Footer">
+        <a href="#lane">Lane</a>
+        <a href="#pools">Pools</a>
+        <a href="#method">Method</a>
+        <a href="#wallet">Wallet</a>
+        <a href="#receipt">Receipt</a>
+        <a href="#token">Token</a>
+      </nav>
+    </div>
+    <div class="foot__legal">
+      <p class="foot__ca"><span class="pill">CA</span> <!--slot:ca-mirror--></p>
+      <p>BIND stands alone: it has no affiliation with, and no backing from, Robinhood, DefiLlama, DexScreener or any issuer whose token shows up in a pool.</p>
+      <p>This page gives no advice. A token may fall to zero, a pool may run shallow, and what a pool quotes is no promise of a fill. Each live figure names the service behind it and how old it is; a service that fails to answer leaves a blank, never a number.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

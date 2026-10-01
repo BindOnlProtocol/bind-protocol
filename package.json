@@ -1,0 +1,16 @@
+{
+  "name": "bind",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Bind (bind.onl): Robinhood Chain, read live and bound into one page.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs"
+  },
+  "devDependencies": {
+    "jpeg-js": "^0.4.4",
+    "pngjs": "^7.0.0",
+    "puppeteer-core": "^25.12.0"
+  }
+}

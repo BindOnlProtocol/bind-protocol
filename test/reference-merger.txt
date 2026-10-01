@@ -1,0 +1,136 @@
+# Text of the other site (merger.click) as read on 2026-09-30. A gate compares the BIND copy against it; none of this is shipped.
+Skip to content
+Book
+Desk
+Privacy
+Docs
+$MERRGER
+Book
+Menu
+Same share, many issuers, one click, fully private.
+Each issuer's token of a share, priced against one reference. Fund a basket from shielded ZEC, then post the receipt.
+Open the desk
+The book
+Rail: reading
+Rail: unread
+The book, read live
+reading
+unread
+the book
+Underlyings
+reading
+unread
+Issuers
+reading
+unread
+Rows
+reading
+unread
+Book: reading
+Book: unread
+Robinhood
+xStocks
+Ondo
+Binance bStocks
+Coinbase
+Show the book. Keep the wallet.
+Paying wallet
+unlinked
+Funded from shielded ZEC.
+You pay from your own shielded balance, in a wallet that works with Zcash. These figures are read live, each with its derivation, source and age.
+Shielded supply: reading
+Shielded supply: unread
+How the book merges
+Compared raw, issuer prices mostly measure their units. The book lines them up in three steps, and the paying wallet never appears on it.
+Reference
+Robinhood
+xStocks
+Ondo
+Binance bStocks
+Coinbase
+Paying wallet
+unlinked
+One share, many tokens.
+Robinhood, xStocks, Ondo, Binance bStocks and Coinbase each issue a token of the same share. Each quotes its own unit, so the raw prices sit apart.
+Divide out the multiplier.
+Most issuers fold dividends into a unit multiplier. The book reads each multiplier from the issuer's own source and divides it out, so every row is a price per share.
+Measure against one reference.
+Each row is set against one Chainlink reference price and shown as a spread in basis points, with its source and age. A feed priced from a DEX pool never counts as the reference, and a row that cannot be read says unread.
+Keep the wallet out of it.
+Stock Tokens on Robinhood Chain can be bought from the desk, funded from shielded ZEC. The book stays public. The wallet that paid stays unlinked.
+The desk in four steps
+Every signature happens in your browser. No MERGER server holds a key or your funds.
+Open a position account.
+The browser creates a one-time key and keeps it encrypted on this device under your passphrase. The key is never sent to any server.
+key made here, never sent
+Fund it from shielded ZEC.
+Pay from your own wallet that works with Zcash: Zodl, Zingo, Zkool, Vizor or Cake. NEAR Intents 1Click converts the ZEC into ETH on Robinhood Chain.
+shielded ZEC, one-time deposit, ETH
+Buy the basket.
+The browser buys each leg through Uniswap on Robinhood Chain, with a simulation, a minimum out and a deadline on every trade.
+simulate, sign, confirm
+Exit to a fresh shielded address.
+Sell through USDG and send the proceeds back to a new shielded address you control.
+USDG, ZEC, a fresh u1
+Open the desk
+Post the receipt.
+A receipt is a page with its own card on X: the mix by percentage and the week it was made, plus a size band or the exact day if you add them.
+It never carries an address, a txid, an exact amount or an exact time. Each card names its proof level: self-reported, or a handle proven by a post.
+Receipt builder: reading
+Receipt builder: unread
+What stays public
+Shielded ZEC unlinks the wallet that pays. The rest is public by design, and each line below says which side it sits on.
+Unlinked
+Public
+Unlinked
+Which shielded wallet paid, with its balance, its history and its other addresses.
+Public
+The position account and every trade it makes on Robinhood Chain.
+Unlinked
+Where the exit ZEC goes after it lands at your fresh shielded address.
+Public
+The amount and time where ZEC leaves the shielded pool on entry, and the exit payout's amount and receiver.
+Unlinked
+Your other shielded addresses. Refund and exit each use a fresh one.
+Public
+The rail's record of each quote, recipient and refund address included, for anyone holding the deposit address.
+Unlinked
+The wallet behind a receipt. A card carries no address, txid, exact amount or exact time.
+Public
+The mix, the week, and a size band or the exact day if you add them.
+Timing stays public, and MERGER's server and Vercel, its host, see your IP address beside the addresses on each request.
+Read the privacy page
+$MERRGER
+$MERRGER is a fair launch on Pons on Robinhood Chain: the same curve on the same terms for everyone.
+CA
+0x1dFd9c22B6C37AFa633
+2E784D860159876575877
+Read the token page
+Questions
+What is a merged book?
+One list per share: each issuer's token of it, divided by that issuer's multiplier and measured in basis points from one reference price.
+Are the tokens interchangeable?
+No. Each token is its own claim, with its own issuer, terms and eligibility. The book lines them up by price per share and keeps them separate.
+Which rows can I buy here?
+Stock Tokens on Robinhood Chain, through Uniswap, from the desk. Rows from xStocks, Ondo, Binance bStocks and Coinbase are there for reference.
+Who holds the key?
+Your browser. The position account key is made in the page and kept encrypted under your passphrase. No MERGER server holds a key or your funds.
+What does the rail keep public?
+NEAR Intents 1Click runs here in its public mode. Each quote's record, recipient and refund address included, can be read by anyone holding its deposit address (status endpoint probed 2026-09-28 UTC).
+Who can use the desk?
+Stock Tokens are not offered to US persons and are restricted in Canada, the UK and Switzerland. That rule is yours to keep: do not use the desk where it applies to you.
+Merge the market. Unlink the wallet. Post the receipt.
+Paying wallet
+unlinked
+Book
+Desk
+Privacy
+Docs
+Terms
+$MERRGER
+$MERRGER
+0x1dFd9c22B6C37AFa633
+2E784D860159876575877
+MERGER is not affiliated with, endorsed by, or officially connected with Robinhood Markets, Inc., Electric Coin Co., the Zcash Foundation, ZODL, NEAR, or any token issuer shown in the book.
+Stock Tokens are not offered to US persons and are restricted in Canada, the UK and Switzerland. That rule is yours to keep: do not use the desk where it applies to you.
+Nothing here is advice. Tokens can lose all of their value, pools can be thin and a quote is not a fill. Live figures show their source and age, measured figures carry the date they were read, and an unread source shows no number. Live on this site: the merged book, the rail quote and receipts, each read from the source it names. $MERRGER: contract 0x1dFd9c22B6C37AFa6332E784D860159876575877 on Robinhood Chain.

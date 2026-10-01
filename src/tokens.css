@@ -1,0 +1,27 @@
+/* Written by scripts/sample-brand.mjs. Do not edit by hand.
+   PALETTE PROVENANCE: every literal below is the exact colour of a real pixel in the brand or reference assets.
+   Method: seeded k-means (k-means++ init, seed 7, 24 iterations) over opaque pixels; each centroid is snapped to the nearest real pixel of its cluster and that pixel's exact colour is the token.
+   This is the only file allowed to hold a colour literal; every other stylesheet reads these variables. */
+:root {
+  --ground: #f5f2f7; /* reference/BIND 1.jpg.jpeg @ (0,0) share 1, top strip k=1, centroid #f5f2f7 */
+  --ink: #21286d; /* reference/BIND 1.jpg.jpeg @ (646,279) share 0.3318, headline block k=3, darkest, centroid #20286d */
+  --blue: #0c36ee; /* reference/BIND 1.jpg.jpeg @ (138,66) share 0.4283, wordmark k=3, most saturated, centroid #0d36ee */
+  --green: #1ac98b; /* brand/LOGO BIND PNG...png @ (992,584) share 0.503, mark k=3, hue 120-180, centroid #1ac98b */
+  --lavender: #8b84fd; /* brand/LOGO BIND PNG...png @ (686,1025) share 0.2688, mark k=3, lightest of the two blue-violets, centroid #8b84fd */
+  --indigo: #3d32c9; /* brand/LOGO BIND PNG...png @ (872,920) share 0.2282, mark k=3, darkest of the two blue-violets, centroid #3d32c9 */
+  --night: #0a0f24; /* brand/LOGO BIND PNG.png @ (20,0) share 0.986, top band k=2, largest, centroid #0a0f24 */
+  --snow: #f6f6f6; /* reference/SAMPUL BIND JPG.jpg.jpeg @ (510,151) share 0.434, cover wordmark k=3, lightest, centroid #f6f6f7 */
+
+  /* derived only by mixing the sampled values above (srgb), never a new literal */
+  --paper: color-mix(in srgb, var(--ground) 40%, var(--snow));
+  --ink-2: color-mix(in srgb, var(--ink) 84%, var(--ground));
+  --ink-3: color-mix(in srgb, var(--ink) 77%, var(--ground));
+  --mist: color-mix(in srgb, var(--lavender) 14%, var(--ground));
+  --line: color-mix(in srgb, var(--ink) 11%, var(--ground));
+  --line-2: color-mix(in srgb, var(--ink) 16%, transparent);
+  --green-ink: color-mix(in srgb, var(--green) 38%, var(--ink));
+  --seal: var(--night);
+  --on-seal: color-mix(in srgb, var(--ground) 88%, var(--snow));
+  --on-seal-2: color-mix(in srgb, var(--ground) 84%, var(--night));
+  --shade: color-mix(in srgb, var(--indigo) 30%, transparent);
+}

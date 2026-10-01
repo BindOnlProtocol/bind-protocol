@@ -1,0 +1,13 @@
+{
+  "_note": "The register: one record per external fact. state is stated, absent or unconfirmed. Only a stated record may carry a link or a copy action. A handle is never stored: it is derived from the stored URL.",
+  "ca":          { "state": "absent", "value": "" },
+  "x":           { "state": "absent", "url": "" },
+  "github":      { "state": "absent", "url": "" },
+  "launch":      { "state": "absent", "value": "" },
+  "domain":      { "state": "stated", "value": "bind.onl", "source": "owner brief" },
+  "chain":       { "state": "stated", "id": 4663, "name": "Robinhood Chain", "source": "owner brief" },
+  "rpc":         { "state": "stated", "url": "https://rpc.mainnet.chain.robinhood.com", "source": "owner brief" },
+  "llama":       { "state": "stated", "url": "https://api.llama.fi/v2/chains", "source": "owner brief" },
+  "dexscreener": { "state": "stated", "url": "https://api.dexscreener.com/latest/dex/search", "source": "owner brief" },
+  "explorer":    { "state": "unconfirmed", "url": "https://robinhoodchain.blockscout.com", "source": "seen in another site's code and answering 200 on 2026-10-01; not stated by the owner, so it is named but never linked" }
+}
